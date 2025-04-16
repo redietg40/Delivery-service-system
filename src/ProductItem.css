@@ -1,0 +1,112 @@
+
+.first{
+    position: relative;
+    top:20px;
+    left:20px; 
+ }
+ .thewhole{
+     display: grid;
+     grid-template-columns: 200px 200px 200px 200px;
+     column-gap:95px;
+     margin-left: 40px;
+     row-gap: 40px;
+     margin-top: 70px;
+ }
+ .product-item{
+     border: 2px rgb(235, 226, 208) solid;
+     height:400px;
+     width: 250px;
+  
+ }
+ section{
+ position: absolute;
+ top:40px;
+ width: 1185px;
+ height: 470px;
+ }
+ .image-item{
+     width: 200px;
+     height: 150px;
+     margin-bottom: 30px;
+ }
+ .top{
+     display: flex;
+     display: grid;
+     width: 1269px;
+     grid-template-columns: 600px 200px;
+     column-gap: 400px;
+     margin-top: 0%;
+     height: 40px;
+     justify-content: end;
+     align-items: center;
+     position: fixed;
+     padding-bottom: 40px;
+     bottom: 515px;
+     top:0px;
+     background-color: rgb(30, 88, 212);
+     padding-top: 10px;
+ 
+ }
+ .searchbar::placeholder{
+  color:black;
+ }
+ .search-wrapper {
+     position: relative;
+     width: 600px;
+     margin-left: 200px;
+   }
+   
+   .searchbar {
+     width: 100%;
+     padding: 8px 12px 8px 40px;
+     border-radius: 6px;
+     border: 1px solid #ccc;
+     font-size: 14px;
+   }
+   
+   .search-icon {
+     position: absolute;
+     top: 50%;
+     left: 12px;
+     transform: translateY(-50%);
+     color: gray;
+     font-size: 18px;
+   }
+   a.container {
+     text-decoration: none;
+     color: black;
+     height: 40px;
+     padding-top: 10px;
+     width: 100px;
+     padding-bottom: 10px;
+     display: inline-block; /* Ensures height and padding apply */
+     color:white;
+   }
+   
+   a.container:hover {
+     border: 2px solid rgb(0, 0, 0); /* Red border on hover */
+   }
+   
+   .arrow{
+     position: absolute;
+     left:20px;
+   }
+   svg {
+     color: white; /* Maintains the white color */
+     width: 24px;  /* Set specific width */
+     height: 24px; /* Set specific height */
+     
+     /* Alternative approach using font-size if these are icon fonts */
+     font-size: 1.5rem; }
+     .submit-btns{
+     transform:translateX(400px);
+       width: 400px;
+       margin-top: 20px;
+       margin-left: 100px;
+       color: white;
+       background-color: rgb(26, 82, 194);
+       width: 200px;
+     }
+     .submit-btns:hover{
+        opacity: 0.89;
+     }
