@@ -34,7 +34,7 @@ const onsubmite=(data:FormData)=>{
 console.log("the data is",{data});
 }
   return (<section >
-     <img src="src/images/cartdeliver.png" alt="tryagain" className="cart-images"/>
+     <img src="src/images/cartdeliver.png" alt="tryagain" className="cart-images" />
      <div className="introduction"><em>wellcome to our delivery service</em></div>
      <div className="addvert">
      
