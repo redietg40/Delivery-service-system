@@ -1,0 +1,76 @@
+/* body{
+   background-color: rgb(207, 203, 203);
+   height: 100%;
+   width: 100%;
+} */
+ .total-quantity{
+   margin-left: 450px;
+   font-size: large;
+   font-weight: bold;
+   color: rgb(3, 70, 194);
+
+ }
+ .total-quantity:hover{
+   border: 2px solid rgb(19, 24, 35);
+   padding-left: 16px;
+ }
+.detail-image{
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+ }
+ .detail-top{
+    display: grid;
+grid-template-columns: 200px 200px 200px 200px ;
+   gap: 100px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    row-gap: 20px;
+ }
+ .detail-container{
+    height:400px;
+    width: 250px;
+    margin-top: 20px;
+    background-color: rgb(237, 241, 245);
+    box-shadow:6px 5px 6px rgb(167, 155, 155);
+    margin-left: 20px;
+
+ }
+ .detail-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(3, 70, 194);
+    margin-top: 20px;
+    margin-left: 20px;
+ }
+ span{
+   position: absolute;
+   top: 50px;
+ }
+ .Arrow-click{
+   position: absolute;
+   top: 10px;
+   left: 0px;
+   font-size: 30px;
+   color: rgb(3, 70, 194);
+ }
+ .Arrow-click svg{
+   position: absolute;
+   font-size: 30px;
+   color: rgb(3, 70, 194);
+ }
+@media (max-width: 768px) {
+   .detail-top{
+    display: grid;
+    grid-template-columns: 200px ;
+  margin-top: 1200px;
+  display: inline-block;
+  }
+.total-quantity{
+  margin-left: 130px;
+}
+.detail-container{
+  margin-left: 100px;
+}
+}

@@ -1,0 +1,325 @@
+div.todo-container {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 750px;
+    margin-left: 10px;
+
+  }
+  
+  .cart-summery {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color:rgb(0, 66, 128);
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-left: 400px;
+    cursor: pointer;
+  }
+  
+  .toList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 90px;
+    margin-left: 60px;
+  }
+  
+  .todo-item {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    border: 2px rgb(221, 205, 205) solid;
+    width: 260px;
+    height: 500px;
+    box-shadow: 5px 5px 5px 5px rgb(165, 162, 162);
+    background-color: white;
+    position: relative; /* Added to create a positioning context */
+  }
+  
+  .todo-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  
+  .item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 340px;
+    position: absolute;
+    top: -200px;
+    width: 200px;
+    height: 150px;
+    margin-left: 20px;
+  }
+  
+  .item-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 40px;
+    color: rgb(32, 108, 239);
+    width: 200px; /* Added fixed width */
+    white-space: nowrap; /* Prevent wrapping to next line */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    display: block; /* Ensure it's a block element */
+  }
+  
+  .item-name:hover {
+    color: blue;
+    cursor: pointer;
+    overflow: visible; /* Show full text on hover */
+    white-space: normal; /* Allow wrapping on hover */
+    z-index: 10; /* Ensure it appears above other elements */
+    background-color: rgba(255, 255, 255, 0.9); /* Add slight background to make text readable */
+  }
+  
+  .item-price,
+  .item-quantity,
+  .item-total {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .item-total {
+    font-weight: 600;
+    color: #e53935;
+  }
+  
+  .delivery-name {
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block;
+    transform: translateY(100px);
+    color: black;
+  }
+  
+  span.date {
+    color: #2196f3;
+    margin-left: 5px;
+    color: black;
+    margin-left: 130px;
+    margin-top: -1090px;
+  }
+  
+  .choose {
+    display: block;
+    font-size: 0.85rem;
+    color: #757575;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-top: 140px;
+    margin-left: 0px;
+  }
+  
+  .date-input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: 240px;
+    padding: 8px 12px; /* Adjust padding for better spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Slightly larger font size */
+    background-color: #f9f9f9; /* Light background color */
+    color: #5e4a4a; /* Dark text color */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus and hover effects */
+
+  }
+  
+  .summery-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 25px auto 0;
+    padding: 12px;
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 400px;
+
+    width: 90px;
+    margin-top: 45px;
+  }
+  
+  .summery-button:hover {
+    background-color: #57ad5b;
+  }
+  
+  .summery-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+    text-align: right;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .cart-total h3 {
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .item-quantity {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 80px;
+    font-weight: bold;
+    color: rgb(4, 14, 26);
+  }
+  .item-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 120px;
+  }
+  .quantity{
+    color: rgb(255, 38, 0);
+    margin-top: -50px;
+    margin-left: 10px;
+  }
+  .quantity:hover{
+    color: rgb(15, 196, 21);
+    cursor: pointer;
+
+  }
+  .summery-button {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    width: 170px;
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .delete-button {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 8px 16px; /* Add padding */
+    font-size: 14px; /* Font size */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover and click effects */
+    width: 100px;
+    height: 30px;
+    margin-top: 420px;
+    margin-left: -180px;
+  }
+  .delete-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  .submission-message {
+    margin-top: 150px;
+    font-size: 4.2rem;
+    color: #388e3c;
+    
+    text-align: center;
+  }
+  .noselected{
+  color:#d32f2f;
+  font-weight: bold;
+  }
+  @media (max-width: 768px){
+    .cart-summery{
+      margin-left: -60px;
+      font-size: 20px;
+      margin-top: 40px;
+    }
+    .summery-button{
+      margin-left: 260px;
+    }
+    .toList {
+      grid-template-columns: 200px 200px;
+      column-gap: 40px;
+      margin-left:-5px;
+    
+    }
+    .todo-item{
+      width: 177px;
+      
+    }
+    img.item-image{
+      width: 150px;
+      height: 100px;
+    }
+    .item-name{
+      font-size:17px;
+      width: 200px;
+      margin-left: -15px;
+
+    }
+    .delivery-name {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      margin-top: 5px; /* Adjust margin for proper alignment */
+      display: block; /* Ensure it displays properly */
+      transform: none; /* Reset transform for smaller screens */
+      margin-left: 0; /* Reset margin for proper alignment */
+    }
+  
+    span.date {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      color: #0b87ec; /* Keep the blue color */
+      margin-left: -40px; /* Adjust margin for smaller screens */
+      margin-top: -1873px; /* Reset margin-top for proper alignment */
+      display: block; }
+
+
+    /* .cart-summery {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color:rgb(0, 66, 128);
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
+      margin-left: 400px;
+      cursor: pointer;
+    } */
+    .item-name{
+      margin-top: -20px;
+    }
+    .submission-message{
+      font-size: 20px;
+    }
+    }
+
+ 

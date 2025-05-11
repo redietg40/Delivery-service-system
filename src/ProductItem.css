@@ -1,0 +1,258 @@
+
+.first{
+    position: relative;
+    top:20px;
+    left:20px; 
+ }
+ body{
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+} 
+ .thewhole{
+     display: grid;
+     grid-template-columns: 200px 200px 200px 200px;
+     column-gap:95px;
+     margin-left: 40px;
+     row-gap: 40px;
+     margin-top: 70px;
+ }
+ svg.cart-icons{
+  color:white;
+  width: 24px;  /* Set specific width */
+  height: 24px; /* Set specific height */
+  font-size: 100px; /* Set font size for icon fonts */
+
+      
+ }
+ .cart-icons{
+  position: absolute;
+left:1200px;
+ }
+ .tochange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Keeps it fixed on the screen */
+  bottom: 20px; /* Position it near the bottom */
+  right: 20px; /* Position it near the right */
+  width: 60px; /* Set width for the container */
+  height: 60px; /* Set height for the container */
+  background-color: #2196f3; /* Blue background */
+  border-radius: 50%; /* Make it circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.tochange:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  background-color: #1976d2; /* Darker blue on hover */
+}
+.greaterthan {
+  font-size: 2rem; /* Set icon size */
+  color: white; /* White icon color */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.tochange:hover .greaterthan {
+  transform: rotate(90deg); /* Rotate the icon on hover */
+}
+
+ .tochange svg{
+  color: black;
+  font-size: 2rem;
+  width: 48px;  /* Set the width of the icon */
+  height: 48px; /* Set the height of the icon */
+ }
+ .product-item{
+     border: 2px rgb(235, 226, 208) solid;
+     height:400px;
+     width: 250px;
+     background-color: white;
+  
+ }
+ section{
+ position: absolute;
+ top:40px;
+ width: 1185px;
+ height: 470px;
+ }
+ .image-item{
+     width: 200px;
+     height: 150px;
+     margin-bottom: 30px;
+ }
+ .top{
+     display: flex;
+     display: grid;
+     width: 1269px;
+     grid-template-columns: 600px 200px;
+     column-gap: 400px;
+     margin-top: 0%;
+     height: 40px;
+     justify-content: end;
+     align-items: center;
+     position: fixed;
+     padding-bottom: 40px;
+
+     bottom: 515px;
+     top:0px;
+     background-color: rgb(30, 88, 212);
+     padding-top: 10px;
+ 
+ }
+ .searchbar::placeholder{
+  color:black;
+ }
+ .search-wrapper {
+     position: relative;
+     width: 600px;
+     margin-left: 200px;
+   }
+   
+   .searchbar {
+     width: 100%;
+     padding: 8px 12px 8px 40px;
+     border-radius: 6px;
+     border: 1px solid #ccc;
+     font-size: 14px;
+   }
+   
+   .search-icon {
+     position: absolute;
+     top: 50%;
+     left: 12px;
+     transform: translateY(-50%);
+     color: gray;
+     font-size: 18px;
+   }
+   a.container {
+     text-decoration: none;
+     color: black;
+     height: 40px;
+     padding-top: 10px;
+     width: 100px;
+     padding-bottom: 10px;
+     display: inline-block; /* Ensures height and padding apply */
+     color:white;
+   }
+   
+   a.container:hover {
+     border: 2px solid rgb(0, 0, 0); /* Red border on hover */
+   }
+   
+   .arrow{
+     position: absolute;
+     left:20px;
+   }
+   svg {
+     color: white; /* Maintains the white color */
+     width: 24px;  /* Set specific width */
+     height: 24px; /* Set specific height */
+     
+     /* Alternative approach using font-size if these are icon fonts */
+     font-size: 1.5rem; }
+    
+     .detail
+     {
+        background-color: rgb(29, 119, 235);
+        box-shadow: 4px;
+        width: 150px;
+        height: 30px;
+         padding-top: 3px;
+           color:white
+     }
+.detail:hover{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section.background {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7);
+    width: 1260px;
+    height: 1450px;
+    position: absolute;
+
+    
+  } 
+  .background1{
+    background-color: rgb(255, 255, 255);
+    width: 1260px;
+    height: 585px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0%;
+    bottom: 0%;
+    
+  }
+ 
+  .background-text{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @media (max-width: 768px){
+    .searchbar{
+      margin-left: -130px;
+      width: 200px;
+      margin-top: 20px;
+    }
+    svg.search-icon{
+      margin-left: -130px;
+      margin-top: 10px;
+    }
+    .thewhole{
+      grid-template-columns: 200px 200px;
+      gap:50px;
+      margin-left: 10px;
+    }
+    .product-item{
+      width: 210px ;
+ 
+    }
+    section.background{
+      height: 2900px;
+    }
+    img.image-item{
+      width: 150px;
+    }
+    .tochange{
+
+    }
+    .background-text{
+      margin-left: -800px;
+      font-size: 18px;
+    }
+    svg.cart-icons {
+      position: absolute;
+      left: 50%; /* Center horizontally */
+      transform: translateX(1810%); /* Adjust for centering */
+      top: -6px; /* Adjust vertical position */
+      font-size: 10rem;
+       /* Adjust size for smaller screens */
+    }
+
+    .tochange {
+      bottom: 10px; /* Adjust position for smaller screens */
+      right: 10px; /* Adjust position for smaller screens */
+      width: 50px; /* Reduce size for smaller screens */
+      height: 50px; /* Reduce size for smaller screens */
+    }
+  
+    .greaterthan {
+      font-size: 1.5rem; /* Reduce icon size for smaller screens */
+      color: white; /* Ensure the icon remains visible */
+      position: relative; /* Adjust position for smaller screens */
+      transform: none; /* Remove unnecessary transformations */
+      top: 0; /* Reset top position */
+      left: 0; /* Reset left position */
+    }
+    }
+      
+      
+  
